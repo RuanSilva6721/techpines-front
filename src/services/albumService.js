@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000/api/albums';
+const API_URL = `${process.env.REACT_APP_API_URL}/albums`;
 
 export const getAllAlbums = async () => {
     return axios.get(API_URL);
