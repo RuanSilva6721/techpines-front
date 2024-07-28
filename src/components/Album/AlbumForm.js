@@ -20,6 +20,7 @@ const AlbumForm = () => {
         setTitle('');
         setArtist('');
         setGenre('');
+        window.location.reload()
     };
 
     return (
