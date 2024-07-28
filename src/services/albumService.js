@@ -25,6 +25,9 @@ export const updateAlbum = async (id, album) => {
         }
     });
 };
+export const getMusicByAlbum = async (albumId) => {
+    return await axios.get(`${API_URL}/${albumId}/musics`);
+};
 
 export const deleteAlbum = async (id) => {
     return axios.delete(`${API_URL}/${id}`);
